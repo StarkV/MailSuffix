@@ -71,7 +71,7 @@
     //设置lblEmail 的attribute
     NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%@%@",emailString,fixStr]];
     [attributeString addAttribute:NSForegroundColorAttributeName value:[UIColor clearColor] range:NSMakeRange(0,cutLenth)];
-    self.suffixLbl.attributedText = attributeString;
+    self.suffixLbl.attributedText = attributeString;     
     
     //清空文本框内容时 隐藏lblEmail
     if(completeStr.length == 0){
